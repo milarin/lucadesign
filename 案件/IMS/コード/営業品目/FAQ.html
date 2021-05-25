@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/faq.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>faq</title>
+</head>
+<body>
+
+  <div class="faq_container">
+
+    <div id="accordion" class="accordion_container accordion_grid">
+
+      <div class="accordion_grid_item">
+
+        <h4 class="accordion_title js_accordion_title"><span class="accordion_sp">Q. </span>よくある質問アコーディオン1よくある質問アコーディオン1よくある質問アコーディオン1よくある質問アコーディオン1</h4>
+        <div class="accordion_content">
+          <p><span class="accordion_sp">A.</span>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div><!-- .accordion_content-->
+        
+      </div><!-- .accordion_grid_item -->
+
+      <div class="accordion_grid_item">
+
+        <h4 class="accordion_title js_accordion_title"><span class="accordion_sp">Q. </span>よくある質問アコーディオン1よくある質問アコーディオン1よくある質問アコーディオン1よくある質問アコーディオン1</h4>
+        <div class="accordion_content">
+          <p><span class="accordion_sp">A.</span>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div><!-- .accordion_content-->
+        
+      </div><!-- .accordion_grid_item -->
+
+      <div class="accordion_grid_item">
+
+        <h4 class="accordion_title js_accordion_title"><span class="accordion_sp">Q. </span>よくある質問アコーディオン1よくある質問アコーディオン1よくある質問アコーディオン1よくある質問アコーディオン1</h4>
+        <div class="accordion_content">
+          <p><span class="accordion_sp">A.</span>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div><!-- .accordion_content-->
+        
+      </div><!-- .accordion_grid_item -->
+
+        
+    
+    </div><!--/#accordion-->
+    
+  </div><!-- .faq_content -->
+
+<script>
+  $('.js_accordion_title').on('click', function(){
+    $(this).next().slideToggle(300);
+    $(this).toggleClass('open', 200);
+  });
+  
+</script>
+</body>
+</html>

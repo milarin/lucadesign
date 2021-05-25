@@ -1,0 +1,28 @@
+<!-- <?php 
+if(get_field('recruit_24_2set','option')): //条件分岐：?>
+
+<div class='selection_container'>
+
+	<div class="selection">
+	<?php
+		$rec24 = the_repeater_field('recruit_24_2set','option');
+		while(the_repeater_field('recruit_24_2set','option')): //リピート：
+		?>
+		<div class="selection_repeat">
+			<div class="selection_repeat_content p_text">
+
+				<p class="p_text_left"><?php the_sub_field('2set_item') ?></p>
+				<p class="p_text_right">
+					<?php the_sub_field('2set_content') ?>
+				</p>
+			</div><!-- .selection_repeat_content -->
+<!-- 			<?php if(next($rec24)): ?>
+			<?php echo <div class="downarrow"></div> ?>
+			<?php endif;> -->
+			
+		</div><!-- .selection_repeat -->
+		<?php endwhile; //ENDリピート：?>
+	</div><!-- .selection -->
+
+</div><!-- .selection_container -->
+<?php endif; //END条件分岐：?> -->

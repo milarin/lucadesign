@@ -1,0 +1,48 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 30px;
+}
+
+.gird_item {
+  max-width: 370px;
+}
+
+h4 {
+  color: #333;
+  font-size: 16px;
+}
+
+span {
+  color: #2A46B7;
+  font-size: 22px;
+  margin-right: .3em;
+}
+
+.grid_img {
+  width: 100%;
+}
+
+.grid_title {
+  padding-left: 28px;
+  color: red;
+  position: relative;
+}
+
+.grid_title::before {
+  display: block;
+  position: absolute;
+  top: .15em;
+  left: .5rem;
+  content: '';
+  width: 4px;
+  height: 20px;
+  background-color: #000;
+  transform: skew(-30deg);
+}
+/*# sourceMappingURL=repeater.css.map */

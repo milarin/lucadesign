@@ -1,0 +1,40 @@
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 3%;
+}
+.overview_table {
+  width: 100%;
+}
+
+.overview_th,
+.overview_td {
+  font-size: 14px;
+  font-weight: 300;
+}
+.overview_th {
+  border-bottom: 1px #000 solid;
+  text-align: center;
+  color: #192452;
+}
+
+.overview_td {
+  border-bottom: 1px rgba($color: #333, $alpha: .3) solid;
+  color: #333;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 40px 5%;
+  }
+
+  .overview_td {
+    padding: 20px;
+    padding-left: 30px;
+  }
+  .overview_th {
+    width: 12.6%;
+    text-align: left;
+  }
+}

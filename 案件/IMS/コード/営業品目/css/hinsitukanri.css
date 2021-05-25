@@ -1,0 +1,74 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  background: #EDF0F6;
+  padding: 40px 0;
+}
+
+.quality {
+  padding: 0 3%;
+}
+
+.downarrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid black;
+  margin: 10px auto;
+}
+
+.bg_text,
+.p_text {
+  padding: 20px 60px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.p_text {
+  background-color: #fff;
+  color: #192452;
+}
+
+.p_text_m {
+  font-size: 18px;
+}
+
+.bg_text {
+  background-color: #192452;
+  color: #fff;
+  font-size: 18px;
+}
+
+.p_text_left {
+  font-size: 18px;
+}
+
+.p_text_right {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .quality {
+    padding: 0 5%;
+  }
+  .quality_repeat_content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bg_text,
+  .p_text {
+    padding: 40px 60px;
+  }
+  .p_text_left {
+    width: 18%;
+    text-align: center;
+    margin: auto 0;
+  }
+  .p_text_right {
+    width: 74%;
+  }
+}
+/*# sourceMappingURL=hinsitukanri.css.map */

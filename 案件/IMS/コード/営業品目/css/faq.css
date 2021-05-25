@@ -1,0 +1,99 @@
+@charset "utf-8";
+.faq_container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.accordion_container {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3em;
+  row-gap: 1em;
+}
+
+
+.accordion_container .accordion_title {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 1.2rem 2rem;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  background: #192452;
+  cursor: pointer;
+  line-height: 26px;
+}
+
+.accordion_content p {
+  padding: 0 2em;
+  vertical-align: middle;
+  line-height: 26px;
+  text-align: justify;
+}
+
+
+.accordion_container .accordion_title:hover,
+.accordion_container .accordion_title:active,
+.accordion_container .content_entry.open .accordion_title {
+  background-color: #2A46B7;
+  color: white;
+}
+
+.accordion_container .accordion_title:hover i:before,
+.accordion_container .accordion_title:hover i:active,
+.accordion_container .content_entry.open i {
+  color: white;
+}
+
+.accordion_title{
+  position: relative;
+}
+
+.accordion_container .accordion_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 15px;
+  height: 2px;
+  /*縦線に*/
+  transform: rotate(90deg);
+  background: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.accordion_container .accordion_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  /*横線*/
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.accordion_container .accordion_title.open::before {
+  transform: rotate(180deg);
+}
+
+.accordion_container .accordion_title.open::after {
+  opacity: 0;
+}
+
+.accordion_content {
+  display: none;
+}
+
+
+.accordion_sp {
+  font-size: 26px;
+  font-weight: bold;
+  margin-right: 1rem;
+  vertical-align: bottom;
+}
